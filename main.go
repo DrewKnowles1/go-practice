@@ -7,8 +7,11 @@ import "fmt"
 //I apologiese for the horrid code ;) 
 
 func main(){
-
-	printSliceContents(returnAllWorkers())
+	var staff []worker
+	staff = returnAllWorkers()
+	workerSalaryAlignment(staff[0])
+	workerSalaryAlignment(staff[1])
+	
 }
 
 func stringAdd(string1 string, string2 string)(concatString string){
