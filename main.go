@@ -8,9 +8,7 @@ import "fmt"
 
 func main(){
 
-	fmt.Println("Hello World \n")
-	fmt.Println("My function to add strings: " + stringAdd("I'm", "Redundant")) 
-	printSliceContents(returnTeamMembers())
+	printSliceContents(returnAllWorkers())
 }
 
 func stringAdd(string1 string, string2 string)(concatString string){
@@ -19,12 +17,8 @@ func stringAdd(string1 string, string2 string)(concatString string){
 	return concatString
 } 
 
-func returnTeamMembers() (teamMembers []string){
-	teamMembers = append(teamMembers, "Andrew Knowles", "Izzie duthie")
-	return teamMembers
-}
-
-func printSliceContents(slice []string){
+func printSliceContents(slice []worker){
+	//Function to print the contents of a slice of type workers
 	fmt.Println("My function to print the contents of a slice: ")
 	for _, index := range slice{
 		fmt.Println(index)
