@@ -14,7 +14,7 @@ type (
 	}
 )
 
-//Getters for func properties
+//Getters for struct properties
 func (w1 *worker)getFirstname() string {
 	return w1.firstname
 }
@@ -27,7 +27,7 @@ func (w1 *worker)getSalary() int {
 	return w1.salary
 }
 
-//Setters for func properties
+//Setters for struct properties
 func (w1 *worker)setSalary(salary int) {
 	 w1.salary = salary
 }
